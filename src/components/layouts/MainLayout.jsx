@@ -1,9 +1,13 @@
+import Footer from "../shared/Footer"
+import Navbar from "../shared/Navbar"
 
-const MainLayout = () => {
+const MainLayout = ({children}) => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <Navbar />
+            {children}
+            <Footer />
+        </>
     )
 }
 
